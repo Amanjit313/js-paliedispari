@@ -14,6 +14,27 @@
 */
 
 // 1. Palidroma
+var parolapali = prompt("Inserisci una parola palindroma!");
+var parolapaliinvert = parolaInvertita(parolapali);
+
+if(parolapali == parolapaliinvert){
+    console.log('la parola è palindroma');
+  } else {
+    console.log('la parola non è palindroma');
+}
+
+function parolaInvertita(str){
+  var parolapaliinvert = '';
+
+  var i = str.length - 1;
+
+  while (i >= 0) {
+    parolapaliinvert += str[i];
+    i--;
+  }
+
+  return parolapaliinvert;
+}
 
 // 2. Pari e Dispari
 
