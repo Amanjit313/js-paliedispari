@@ -14,8 +14,8 @@
 */
 
 // 1. Palidroma
-var parolapali = prompt("Inserisci una parola palindroma!");
-var parolapaliinvert = parolaInvertita(parolapali);
+let parolapali = prompt("Inserisci una parola palindroma!");
+let parolapaliinvert = parolaInvertita(parolapali);
 
 if(parolapali == parolapaliinvert){
     console.log('la parola è palindroma');
@@ -24,9 +24,9 @@ if(parolapali == parolapaliinvert){
 }
 
 function parolaInvertita(str){
-  var parolapaliinvert = '';
+  let parolapaliinvert = '';
 
-  var i = str.length - 1;
+  let i = str.length - 1;
 
   while (i >= 0) {
     parolapaliinvert += str[i];
